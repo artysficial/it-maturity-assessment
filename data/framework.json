@@ -1,0 +1,39 @@
+{
+  "levels": ["Non-existent", "Initial", "Managed", "Defined", "Quantitatively managed", "Optimising"],
+  "domains": {
+    "Governance": {"cobit": "EDM01, APO02", "target": 4.0, "impact": 3},
+    "Risk & compliance": {"cobit": "APO12, MEA03", "target": 4.0, "impact": 4},
+    "Security operations": {"cobit": "APO13, DSS05", "target": 4.0, "impact": 5},
+    "Key management": {"cobit": "DSS05.03", "target": 4.0, "impact": 5},
+    "Identity & access": {"cobit": "DSS05.04, DSS06.03", "target": 4.0, "impact": 4},
+    "Architecture & integration": {"cobit": "APO03, BAI03", "target": 3.5, "impact": 3},
+    "Delivery & quality": {"cobit": "BAI03, BAI07", "target": 4.0, "impact": 3},
+    "Vendor management": {"cobit": "APO10", "target": 3.5, "impact": 2}
+  },
+  "initiatives": [
+    {"id": "INIT-01", "name": "Payment Security Modernisation (HSM Services API)", "domains": ["Key management", "Security operations", "Architecture & integration"],
+     "horizon": "3-12 months", "effort": "High", "value": "High", "link": "https://artysficial.github.io/project-health-dashboard/",
+     "outcome": "One audited API in front of the HSMs; PCI PIN readiness"},
+    {"id": "INIT-02", "name": "Automated joiner-mover-leaver and SoD-aware access reviews", "domains": ["Identity & access", "Risk & compliance"],
+     "horizon": "0-3 months", "effort": "Medium", "value": "High", "link": "https://artysficial.github.io/itgc-audit-analytics/",
+     "outcome": "Close audit findings AC-01 and AC-02; quarterly reviews with SoD rules"},
+    {"id": "INIT-03", "name": "Key ceremony dual control enforced in the HSM console", "domains": ["Key management"],
+     "horizon": "0-3 months", "effort": "Low", "value": "High", "link": "https://artysficial.github.io/itgc-audit-analytics/",
+     "outcome": "Close audit finding OP-01 before channel migration"},
+    {"id": "INIT-04", "name": "Security testing as a release quality gate", "domains": ["Security operations", "Delivery & quality"],
+     "horizon": "0-3 months", "effort": "Low", "value": "Medium", "link": "https://artysficial.github.io/hsm-api-security-lab/",
+     "outcome": "OWASP API Top 10 suite in CI; no release with open high findings"},
+    {"id": "INIT-05", "name": "Requirements-to-evidence traceability standard", "domains": ["Delivery & quality", "Risk & compliance"],
+     "horizon": "3-12 months", "effort": "Medium", "value": "Medium", "link": "https://artysficial.github.io/requirements-traceability/",
+     "outcome": "Every BRD requirement linked to live test evidence"},
+    {"id": "INIT-06", "name": "Procure-to-pay controls analytics", "domains": ["Vendor management", "Risk & compliance"],
+     "horizon": "3-12 months", "effort": "Low", "value": "Medium", "link": "https://artysficial.github.io/sap-p2p-analytics/",
+     "outcome": "Continuous detection of duplicate invoices, split POs and maverick buying"},
+    {"id": "INIT-07", "name": "Privileged access management (vault and session recording)", "domains": ["Identity & access", "Security operations"],
+     "horizon": "12-24 months", "effort": "High", "value": "High", "link": "",
+     "outcome": "No standing admin rights; recorded privileged sessions"},
+    {"id": "INIT-08", "name": "IT KPI scorecard for the board", "domains": ["Governance"],
+     "horizon": "3-12 months", "effort": "Low", "value": "Medium", "link": "",
+     "outcome": "Quarterly board reporting on IT risk, delivery and service"}
+  ]
+}

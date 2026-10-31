@@ -1,0 +1,299 @@
+{
+  "stakeholders": [
+    "CIO",
+    "CISO",
+    "Head of Payments Technology",
+    "Head of IT Operations",
+    "Head of Internal Audit"
+  ],
+  "questions": [
+    {
+      "id": "GOV-1",
+      "domain": "Governance",
+      "question": "IT strategy is aligned to the business plan and reviewed yearly",
+      "scores": {
+        "CIO": 4,
+        "CISO": 2,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "GOV-2",
+      "domain": "Governance",
+      "question": "An IT steering committee prioritises investment with clear criteria",
+      "scores": {
+        "CIO": 3,
+        "CISO": 5,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 4,
+        "Head of Internal Audit": 1
+      }
+    },
+    {
+      "id": "GOV-3",
+      "domain": "Governance",
+      "question": "IT performance is reported to the board with agreed KPIs",
+      "scores": {
+        "CIO": 4,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 4,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "RIS-1",
+      "domain": "Risk & compliance",
+      "question": "IT risks are recorded, owned and reviewed quarterly",
+      "scores": {
+        "CIO": 3,
+        "CISO": 4,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "RIS-2",
+      "domain": "Risk & compliance",
+      "question": "Regulatory requirements (PCI, OJK) are mapped to controls",
+      "scores": {
+        "CIO": 3,
+        "CISO": 4,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "RIS-3",
+      "domain": "Risk & compliance",
+      "question": "Control testing results feed back into the risk register",
+      "scores": {
+        "CIO": 4,
+        "CISO": 3,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "SEC-1",
+      "domain": "Security operations",
+      "question": "Security events are monitored 24x7 with defined response times",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "SEC-2",
+      "domain": "Security operations",
+      "question": "Vulnerabilities are remediated within policy timelines",
+      "scores": {
+        "CIO": 2,
+        "CISO": 2,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "SEC-3",
+      "domain": "Security operations",
+      "question": "Security testing is part of every release",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "KEY-1",
+      "domain": "Key management",
+      "question": "Cryptographic keys are inventoried with owners and usage",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 2,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 0
+      }
+    },
+    {
+      "id": "KEY-2",
+      "domain": "Key management",
+      "question": "Key ceremonies follow dual control and split knowledge",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "KEY-3",
+      "domain": "Key management",
+      "question": "Applications reach HSMs through a controlled, audited interface",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 2,
+        "Head of IT Operations": 1,
+        "Head of Internal Audit": 1
+      }
+    },
+    {
+      "id": "IDE-1",
+      "domain": "Identity & access",
+      "question": "Joiners, movers and leavers are automated from HR data",
+      "scores": {
+        "CIO": 3,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "IDE-2",
+      "domain": "Identity & access",
+      "question": "Access is reviewed periodically with segregation-of-duties rules",
+      "scores": {
+        "CIO": 2,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 2,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "IDE-3",
+      "domain": "Identity & access",
+      "question": "Privileged access is vaulted and session-recorded",
+      "scores": {
+        "CIO": 3,
+        "CISO": 3,
+        "Head of Payments Technology": 2,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "ARC-1",
+      "domain": "Architecture & integration",
+      "question": "Integration follows API standards with versioning and security",
+      "scores": {
+        "CIO": 4,
+        "CISO": 2,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 4,
+        "Head of Internal Audit": 1
+      }
+    },
+    {
+      "id": "ARC-2",
+      "domain": "Architecture & integration",
+      "question": "Architecture decisions are recorded and reviewed",
+      "scores": {
+        "CIO": 2,
+        "CISO": 3,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 4
+      }
+    },
+    {
+      "id": "ARC-3",
+      "domain": "Architecture & integration",
+      "question": "Technical debt is tracked and funded",
+      "scores": {
+        "CIO": 4,
+        "CISO": 2,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "DEL-1",
+      "domain": "Delivery & quality",
+      "question": "Requirements are traceable to tests and evidence",
+      "scores": {
+        "CIO": 3,
+        "CISO": 3,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "DEL-2",
+      "domain": "Delivery & quality",
+      "question": "Test automation covers regression for critical systems",
+      "scores": {
+        "CIO": 4,
+        "CISO": 4,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "DEL-3",
+      "domain": "Delivery & quality",
+      "question": "Releases have defined quality gates and readiness reports",
+      "scores": {
+        "CIO": 5,
+        "CISO": 3,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 4,
+        "Head of Internal Audit": 4
+      }
+    },
+    {
+      "id": "VEN-1",
+      "domain": "Vendor management",
+      "question": "Purchases follow procure-to-pay controls with approval limits",
+      "scores": {
+        "CIO": 3,
+        "CISO": 4,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 2
+      }
+    },
+    {
+      "id": "VEN-2",
+      "domain": "Vendor management",
+      "question": "Critical vendors are assessed for risk and performance",
+      "scores": {
+        "CIO": 3,
+        "CISO": 4,
+        "Head of Payments Technology": 3,
+        "Head of IT Operations": 4,
+        "Head of Internal Audit": 3
+      }
+    },
+    {
+      "id": "VEN-3",
+      "domain": "Vendor management",
+      "question": "Contracts define service levels and exit plans",
+      "scores": {
+        "CIO": 5,
+        "CISO": 3,
+        "Head of Payments Technology": 4,
+        "Head of IT Operations": 3,
+        "Head of Internal Audit": 3
+      }
+    }
+  ]
+}
