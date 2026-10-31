@@ -61,11 +61,19 @@ def main() -> None:
     checks = json.loads((ROOT / "reports" / "results.json").read_text(encoding="utf-8"))
     body += rk.section("Method checks", rk.table(["Check", "Area", "Result"], [[c["title"], c["category"], rk.pill(c["status"])] for c in checks["tests"]], {2}))
 
+    weak = [d.name for d in domains if d.consensus == "Weak"]
+    takeaways = [
+        f"Arunika Bank's IT scores {current:.1f} out of 5 ({level_name(current, levels).lower()}) against a target of {target:.1f} ({level_name(target, levels).lower()}).",
+        f"The biggest priority is {ranked[0].name.lower()}: it scores {ranked[0].current:.1f} against a target of {ranked[0].target:.1f} and carries high business impact.",
+        f"The roadmap has {len(initiatives)} initiatives over 24 months, including {len(quick_wins)} quick wins that can start within three months.",
+        (f"Stakeholders disagree most on {', '.join(n.lower() for n in weak)}; a short workshop should settle those scores before funding decisions."
+         if weak else "Business leaders consistently score IT higher than Internal Audit does; the roadmap closes that gap with evidence."),
+    ]
     rk.write(str(ROOT / "site" / "index.html"), rk.page(
         title="IT Maturity Assessment",
         eyebrow="Senior IT Consultant · Assessment & roadmap",
         summary="A COBIT-aligned maturity assessment of Arunika Bank's IT across eight domains, with stakeholder views, impact-weighted gaps and a 24-month transformation roadmap.",
-        body=body, repo="it-maturity-assessment", verdict=(f"Maturity {current:.1f} of target {target:.1f}: start with {ranked[0].name.lower()}", "warn"),
+        body=body, repo="it-maturity-assessment", verdict=(f"Maturity {current:.1f} of target {target:.1f}: start with {ranked[0].name.lower()}", "warn"), takeaways=takeaways,
     ))
     print(f"dashboard built: overall {current} vs {target}")
 
